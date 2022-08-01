@@ -1,0 +1,6 @@
+score <- 80
+ifelse(score >= 80, "Passed", "Failed")
+
+check_grade2 <- function(score){
+ ifelse(score >= 80, "Passed", "Failed")
+}

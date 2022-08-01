@@ -1,0 +1,46 @@
+import random
+class ATM:
+        def __init__(self, name, bank, tel, balance):
+            self.name = name
+            self.bank = bank
+            self.tel = tel
+            self.balance = balance
+
+        def deposit(self):
+            deposit = input("Input money you want to deposit: ")
+            print(f"Money you have deposited : {deposit}")
+            print(f"Deposit completed! your balance is: {self.balance + int(deposit)}")
+            self.balance = self.balance + int(deposit)
+
+        def withdraw(self):
+            withdraw = input("Input money you want to withdraw: ")
+            print(f"Money you have withraw: {withdraw}")
+            print(f"Withdraw completed! your balance is: {self.balance - int(withdraw)}")
+            self.balance = self.balance - int(withdraw)
+
+        def check_balance(self, telenum):
+            self.tel = telenum
+            if telenum == int("123456"):
+                print(f"your balance is {self.balance}")
+            else:
+                print("Your telephone number is wrong please try again"
+                )
+
+        def get_otp(self):
+            choice = ['yes', 'no']
+            otp = input(f"You want to recieve a OTP ?: {choice} ")
+            otp_create = random.randrange(100000, 999999)
+            if otp == "yes":
+                print(f"your OTP is {otp_create}")
+            else :
+                print("OTP wasn't send to you")
+
+        def transfer(self):
+            reciever = input(" Input who you want to transfer money: ")
+            select = input("Select bank you want to transfer: ")
+            amount = input("Input moey you want to transfer: ")
+            print(f"you have transfered: {amount} to {reciever} Thank you!")
+            print(f"Your balanced is : {self.balance}")
+            self.balance =self.balance - int(amount)
+
+        

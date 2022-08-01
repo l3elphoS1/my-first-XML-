@@ -8,7 +8,7 @@ just for fun - learning XML
 - R Programming
 - Python Programming
 - Dashboar
-- Sats & ML
+- Stats & ML
 
 ## My Portfolios
 

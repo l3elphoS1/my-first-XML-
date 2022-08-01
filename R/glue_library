@@ -1,0 +1,7 @@
+libraly(Glue)
+
+glue("Hello my name is {my_name}. This year I'm (my_ages) years old.")
+
+hello <- function(user_name) {
+  glue("Hello! {user_name}")
+  }
